@@ -1,0 +1,17 @@
+.aplayer {
+  background: transparent !important;
+}
+
+.aplayer-body {
+  background-color: #fff;
+  right: -230px !important;
+  transition: right 1.2s !important;
+}
+
+.aplayer-body:hover {
+  right: 0px !important;
+}
+
+.aplayer-list {
+  background-color: #fff;
+}
