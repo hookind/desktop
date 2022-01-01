@@ -485,10 +485,10 @@ window.Win10 = {
                     layer.alert(Win10.lang('您的浏览器不支持,请按 Ctrl+D 手动收藏!','Your browser does not support, please press Ctrl+D to manual collection!'));
                 }
             }],
-            ['<i class="fa fa-fw fa-window-maximize"></i> '+Win10.lang('进入全屏','Enable Full Screen'),function () {Win10.enableFullScreen()}],
-            ['<i class="fa fa-fw fa-window-restore"></i> '+Win10.lang('退出全屏','Disable Full Screen'),function () {Win10.disableFullScreen()}],
+            ['<i class="fa fa-fw fa-window-maximize"></i> '+Win10.lang('进入全屏','Enable Full'),function () {Win10.enableFullScreen()}],
+            ['<i class="fa fa-fw fa-window-restore"></i> '+Win10.lang('退出全屏','Disable Full'),function () {Win10.disableFullScreen()}],
             '|',
-            ['<i class="fa fa-fw fa-info-circle"></i> '+Win10.lang('关于','About Us'),function () {Win10.aboutUs()}],
+            ['<i class="fa fa-fw fa-info-circle"></i> '+Win10.lang('关于','About'),function () {Win10.aboutUs()}],
         ]);
         Win10.setContextMenu('#win10_btn_group_middle',[
             ['<i class="fa fa-fw fa-window-maximize"></i> '+Win10.lang('全部显示','Show All Windows'),function () {Win10.showWins()}],
@@ -860,13 +860,13 @@ window.Win10 = {
             closeBtn: 1, //不显示关闭按钮
             anim: 2,
             skin: 'layui-layer-molv',
-            title: 'WIN10-UI '+this._version,
+            title: 'About',
             shadeClose: true, //开启遮罩关闭
-            area: ['320px', '200px'], //宽高
-            content: '<div style="padding: 10px;font-size: 12px">' +
-            '<p>支持组件:layer、jquery、animated.css、font-awesome</p>' +
-            '<p>尤里2号©版权所有</p>' +
-            '<p>作者邮箱:yuri2peter@qq.com</p>' +
+            area: ['250px', '200px'], //宽高
+            content: '<div style="padding: 10px;font-size: 14px; text-align:center;">' +
+            '<p>Developer: <a href="https://github.com/hookind" target="_blank">hookind</a></p>' +
+            '<p>Email: hookind@qq.com</p>' +
+            '<p>Copyright: <a href="https://github.com/yuri2peter" target="_blank">yuri2</a></p>' +
             '</div>'
         });
     },
