@@ -3,7 +3,7 @@
 }
 
 .aplayer-body {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   right: -230px !important;
   transition: right 1.2s !important;
 }
@@ -13,5 +13,5 @@
 }
 
 .aplayer-list {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
 }
