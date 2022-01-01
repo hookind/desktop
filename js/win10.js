@@ -866,7 +866,7 @@ window.Win10 = {
             content: '<div style="padding: 10px;font-size: 14px; text-align:center;">' +
             '<p>Developer: <a href="https://github.com/hookind" target="_blank">hookind</a></p>' +
             '<p>Email: hookind@qq.com</p>' +
-            '<p>Address: <a href="https://hookind.github.io" target="_blank">hookind.github.io</a></p>' +
+            '<p>Address: <a href="https://desktop.hookind.space" target="_blank">desktop.hookind.space</a></p>' +
             '<p>Copyright: <a href="https://github.com/yuri2peter" target="_blank">yuri2</a></p>' +
             '</div>'
         });
