@@ -862,10 +862,11 @@ window.Win10 = {
             skin: 'layui-layer-molv',
             title: 'About',
             shadeClose: true, //开启遮罩关闭
-            area: ['250px', '200px'], //宽高
+            area: ['250px', '210px'], //宽高
             content: '<div style="padding: 10px;font-size: 14px; text-align:center;">' +
             '<p>Developer: <a href="https://github.com/hookind" target="_blank">hookind</a></p>' +
             '<p>Email: hookind@qq.com</p>' +
+            '<p>Address: <a href="https://hookind.space" target="_blank">hookind.space</a></p>' +
             '<p>Copyright: <a href="https://github.com/yuri2peter" target="_blank">yuri2</a></p>' +
             '</div>'
         });
