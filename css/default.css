@@ -166,7 +166,7 @@ body {
     background-color: rgba(19,23,28,0.81);
     height: 60%;
     width: 70%;
-    max-width: 800px;
+    max-width: 600px;
     overflow: auto;
     padding-left:10px;
     z-index: 1000;
@@ -282,7 +282,7 @@ body {
 
 #win10-menu .menu_group {
     float: left;
-    width: 300px;
+    width: 340px;
     color: white;
     position: relative;
     overflow: hidden;
