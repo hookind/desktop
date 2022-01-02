@@ -4,13 +4,25 @@
 }
 
 .aplayer-body {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0);
   right: -230px !important;
-  transition: right 1.2s !important;
+  transition: right 1.2s, background-color  1s !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+.aplayer-pic {
+  border-radius: 10px !important;
+}
+
+.aplayer-list {
+  border-radius: 10px !important;
+  overflow: hidden !important;
 }
 
 .aplayer-body:hover {
   right: 0px !important;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .aplayer-list {
