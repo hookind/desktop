@@ -38,13 +38,6 @@
   background-color: black !important;
   opacity: 0.5;
   display: none;
-
-  transition: display 2s;
-}
-
-#search_dialog {
-  margin: 20 auto;
-  width: 80%;
 }
 
 #search_text {
