@@ -28,3 +28,35 @@
 .aplayer-list {
   background-color: rgba(255, 255, 255, 0.7);
 }
+
+#search_panel {
+  z-index: 20000000;
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black !important;
+  opacity: 0.5;
+  display: none;
+
+  transition: display 2s;
+}
+
+#search_dialog {
+  margin: 20 auto;
+  width: 80%;
+}
+
+#search_text {
+  display: block;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+}
