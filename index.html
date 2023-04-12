@@ -1,179 +1,229 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="hookind's desktop" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>hookind's desktop</title>
+    <link rel="shortcut icon" href="./img/head.png" />
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./live2dw/lib/L2Dwidget.min.js"
+    ></script>
+    <link href="./css/animate.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="./component/layer-v3.0.3/layer/layer.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./component/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./css/default.css" rel="stylesheet" />
+    <link href="./css/mycss.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/win10.js"></script>
+    <link rel="stylesheet" href="./css/APlayer.min.css" />
+    <script src="./js/APlayer.min.js"></script>
+    <script src="./js/Meting.min.js"></script>
+    <style>
+      * {
+        font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑,
+          STHeiti, MingLiu;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="referrer" content="no-referrer">
-  <meta name="description" content="hookind's desktop">
-  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-  <title>hookind's desktop</title>
-  <link rel="shortcut icon"
-    href="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101144902_head.png">
-  <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
-  <link href="./css/animate.css" rel="stylesheet">
-  <script type="text/javascript" src="./component/layer-v3.0.3/layer/layer.js"></script>
-  <link rel="stylesheet" href="./component/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link href="./css/default.css" rel="stylesheet">
-  <link href="./css/mycss.css" rel="stylesheet">
-  <script type="text/javascript" src="./js/win10.js"></script>
-  <style>
-    * {
-      font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
-    }
+      /*磁贴自定义样式*/
+      .win10-block-content-text {
+        line-height: 44px;
+        text-align: center;
+        font-size: 16px;
+      }
 
-    /*磁贴自定义样式*/
-    .win10-block-content-text {
-      line-height: 44px;
-      text-align: center;
-      font-size: 16px;
-    }
+      .content_pic {
+        border-radius: 5px;
+        overflow: hidden;
+      }
 
-    .content_pic {
-      border-radius: 5px;
-      overflow: hidden;
-    }
+      #win10 {
+        background-image: url("/img/cover01.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+    <script>
+      Win10.onReady(function () {
+        //设置壁纸
+        // Win10.setBgUrl({
+        //     main: './img/wallpapers/main.jpg',
+        //     mobile: './img/wallpapers/mobile.jpg',
+        // });
 
-    #win10 {
-      background-image: url("/img/cover01.jpg");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
-  <script>
-    Win10.onReady(function () {
+        Win10.setAnimated(["animated flip", "animated bounceIn"], 0.01);
+      });
+    </script>
+  </head>
 
-      //设置壁纸
-      // Win10.setBgUrl({
-      //     main: './img/wallpapers/main.jpg',
-      //     mobile: './img/wallpapers/mobile.jpg',
-      // });
-
-      Win10.setAnimated([
-        'animated flip',
-        'animated bounceIn',
-      ], 0.01);
-    });
-  </script>
-</head>
-
-<body>
-  <div id="win10">
-    <div class="desktop">
-      <div id="win10-shortcuts" class="shortcuts-hidden">
-        <div class="shortcut" onclick="window.open('https://github.com/hookind')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101144745_github.png" />
-          <div class="title">github</div>
+  <body>
+    <div id="win10">
+      <div class="desktop">
+        <div id="win10-shortcuts" class="shortcuts-hidden">
+          <div
+            class="shortcut"
+            onclick="window.open('https://github.com/hookind')"
+          >
+            <img class="icon" src="./img/icon/github.png" />
+            <div class="title">github</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://www.hookind.space')"
+          >
+            <img class="icon" src="./img/icon/hookind.png" />
+            <div class="title">hookind</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://www.cnblogs.com/hookind/')"
+          >
+            <img class="icon" src="./img/icon/cnblog.svg" />
+            <div class="title">博客园</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://gitee.com/hookind')"
+          >
+            <img class="icon" src="./img/icon/gitee.png" />
+            <div class="title">gitee</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://leetcode-cn.com/u/hookind')"
+          >
+            <img class="icon" src="./img/icon/leetcode.png" />
+            <div class="title">leetcode</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://www.hookind.space/reading')"
+          >
+            <img class="icon" src="./img/icon/reading.png" />
+            <div class="title">reading</div>
+          </div>
+          <div
+            class="shortcut"
+            onclick="window.open('https://blog.csdn.net/hookind')"
+          >
+            <img class="icon" src="./img/icon/csdn.png" />
+            <div class="title">csdn</div>
+          </div>
         </div>
-        <div class="shortcut" onclick="window.open('https://www.hookind.space')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101144912_hookind.png" />
-          <div class="title">hookind</div>
-        </div>
-        <div class="shortcut" onclick="window.open('https://www.cnblogs.com/hookind/')">
-          <img class="icon" src="https://common.cnblogs.com/favicon.svg" />
-          <div class="title">博客园</div>
-        </div>
-        <div class="shortcut" onclick="window.open('https://gitee.com/hookind')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101144416_gitee.png" />
-          <div class="title">gitee</div>
-        </div>
-        <div class="shortcut" onclick="window.open('https://leetcode-cn.com/u/hookind')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101150919_leetcode.png" />
-          <div class="title">leetcode</div>
-        </div>
-        <div class="shortcut" onclick="window.open('https://www.hookind.space/reading')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101151315_reading.png" />
-          <div class="title">reading</div>
-        </div>
-        <div class="shortcut" onclick="window.open('https://blog.csdn.net/hookind')">
-          <img class="icon"
-            src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220102193505_csdn.png" />
-          <div class="title">csdn</div>
-        </div>
+        <div id="win10-desktop-scene"></div>
       </div>
-      <div id="win10-desktop-scene"></div>
-    </div>
-    <div id="win10-menu" class="hidden">
-      <div class="list win10-menu-hidden animated animated-slideOutLeft">
-        <div class="item" onclick="Win10.exit()">
-          <i class="black icon fa fa-power-off fa-fw"></i><span class="title">关闭</span>
+      <div id="win10-menu" class="hidden">
+        <div class="list win10-menu-hidden animated animated-slideOutLeft">
+          <div class="item" onclick="Win10.exit()">
+            <i class="black icon fa fa-power-off fa-fw"></i
+            ><span class="title">关闭</span>
+          </div>
         </div>
-      </div>
-      <div class="blocks">
-        <div class="menu_group">
-          <div class="title">常用网站</div>
-          <div class="block" loc="1,1" size="2,2">
-            <div class="content" style="background-color: rgba(0, 196, 255, 0);">
-              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html" target="_blank"><img
-                  src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220102160055_java-11-api.png"
-                  width="100%" height="100%" /></a>
+        <div class="blocks">
+          <div class="menu_group">
+            <div class="title">常用网站</div>
+            <div class="block" loc="1,1" size="2,2">
+              <div
+                class="content"
+                style="background-color: rgba(0, 196, 255, 0)"
+              >
+                <a
+                  href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html"
+                  target="_blank"
+                  ><img src="./img/icon/java.png" width="100%" height="100%"
+                /></a>
+              </div>
+            </div>
+            <div class="block" loc="3.1,1" size="2,2">
+              <div
+                class="content"
+                style="background-color: rgba(0, 196, 255, 0)"
+              >
+                <a href="https://vercel.com" target="_blank"
+                  ><img src="./img/icon/vercel.png" width="100%" height="100%"
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="block" loc="3.1,1" size="2,2">
-            <div class="content" style="background-color: rgba(0, 196, 255, 0);">
-              <a href="https://vercel.com" target="_blank"><img
-                  src="https://images.cnblogs.com/cnblogs_com/blogs/658988/galleries/2081206/o_220101154643_vercel.png"
-                  width="100%" height="100%" /></a>
-            </div>
+        </div>
+        <div id="win10-menu-switcher"></div>
+      </div>
+      <div id="win10_command_center" class="hidden_right">
+        <div class="title">
+          <h4 style="float: left">消息中心</h4>
+          <span id="win10_btn_command_center_clean_all">全部清除</span>
+        </div>
+        <div class="msgs"></div>
+      </div>
+      <div id="win10_task_bar">
+        <div id="win10_btn_group_left" class="btn_group">
+          <div id="win10_btn_win" class="btn">
+            <span class="fa fa-windows"></span>
+          </div>
+          <!-- 用之写上搜索框代码 -->
+          <div class="btn" id="web_search">
+            <span class="fa fa-search"></span>
           </div>
         </div>
-      </div>
-      <div id="win10-menu-switcher"></div>
-    </div>
-    <div id="win10_command_center" class="hidden_right">
-      <div class="title">
-        <h4 style="float: left">消息中心 </h4>
-        <span id="win10_btn_command_center_clean_all">全部清除</span>
-      </div>
-      <div class="msgs"></div>
-    </div>
-    <div id="win10_task_bar">
-      <div id="win10_btn_group_left" class="btn_group">
-        <div id="win10_btn_win" class="btn"><span class="fa fa-windows"></span></div>
-        <!-- 用之写上搜索框代码 -->
-        <div class="btn" id="web_search"><span class="fa fa-search"></span></div>
-      </div>
-      <div id="win10_btn_group_middle" class="btn_group"></div>
-      <div id="win10_btn_group_right" class="btn_group">
-        <div class="btn" id="win10_btn_time"></div>
-        <div class="btn" id="win10_btn_command"><span id="win10-msg-nof" class="fa fa-comment-o"></span></div>
-        <div class="btn" id="win10_btn_show_desktop"></div>
+        <div id="win10_btn_group_middle" class="btn_group"></div>
+        <div id="win10_btn_group_right" class="btn_group">
+          <div class="btn" id="win10_btn_time"></div>
+          <div class="btn" id="win10_btn_command">
+            <span id="win10-msg-nof" class="fa fa-comment-o"></span>
+          </div>
+          <div class="btn" id="win10_btn_show_desktop"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- 搜索组件 -->
-  <div id="search_panel">
-    <!-- <div id="search_dialog"> -->
-    <input id="search_text" type="text" />
-    <!-- </div> -->
-  </div>
+    <!-- 搜索组件 -->
+    <div id="search_panel">
+      <!-- <div id="search_dialog"> -->
+      <input id="search_text" type="text" />
+      <!-- </div> -->
+    </div>
 
-  <script src="https://www.hookind.space/live2dw/lib/L2Dwidget.min.js"></script>
-  <script>L2Dwidget.init({
-      "tagMode": false,
-      "log": false,
-      "model": {
-        "jsonPath": "https://www.hookind.space/live2dw/assets/shizuku.model.json"
-      },
-      "display": { "position": "right", "width": 200, "height": 400, "hOffset": 20 },
-      "mobile": { "show": false, "scale": 0.5 }, "react": { "opacity": 0.9 },
-      "dialog": { "enable": true, "hitokoto": true }
-    });</script>
+    <script>
+      L2Dwidget.init({
+        tagMode: false,
+        log: false,
+        model: {
+          jsonPath: "/live2dw/assets/shizuku.model.json",
+        },
+        display: { position: "right", width: 200, height: 400, hOffset: 20 },
+        mobile: { show: false, scale: 0.5 },
+        react: { opacity: 0.9 },
+        dialog: { enable: true, hitokoto: true },
+      });
+    </script>
 
-  <div style="position: fixed; right: 0px; top: 80px; width: 320px;" class="aplayer no-destroy" data-id="7631936612"
-    data-server="tencent" data-type="playlist" data-fixed="false" data-mini="false" data-listFolded="true"
-    data-order="random" data-preload="none" data-autoplay="false" muted></div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script>
-</body>
-
+    <div
+      style="position: fixed; right: 0px; top: 80px; width: 320px"
+      class="aplayer no-destroy"
+      data-id="7631936612"
+      data-server="tencent"
+      data-type="playlist"
+      data-fixed="false"
+      data-mini="false"
+      data-listFolded="true"
+      data-order="random"
+      data-preload="none"
+      data-autoplay="false"
+      muted
+    ></div>
+  </body>
 </html>
