@@ -420,7 +420,7 @@ window.Win10 = {
     $("#search_text").keydown(function (e) {
       var value = document.getElementById('search_text').value.replace(/(^\s*)|(\s*$)/g, "");
       if (e.keyCode == 13 && value != '') {
-        window.open('https://cn.bing.com/search?q=' + value);
+        window.open('https://www4.bing.com/search?q=' + value);
       }
     });
 
@@ -463,10 +463,6 @@ window.Win10 = {
         $(this).parent().parent().find('.layui-layer-btn0').click();
       }
     });
-    //打广告
-    setTimeout(function () {
-      console.log(Win10.lang('本页由Win10-UI强力驱动\n更多信息：http://win10ui.yuri2.cn \nWin10-UI,轻松打造别具一格的后台界面 ', 'The page is strongly driven by Win10-UI.\nFor more info: http://win10ui.yuri2.cn.\n Win10-UI, easy to create a unique background interface.'))
-    }, 2000);
     //点击清空右键菜单
     $(document).click(function (event) {
       if (!event.button)
